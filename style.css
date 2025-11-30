@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #0A689B 0%, #0d8bc9 100%);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.hero {
+    background: linear-gradient(rgba(10, 104, 155, 0.8), rgba(10, 104, 155, 0.8));
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #0A689B 0%, #0d8bc9 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 36px;
+}
+
+.content {
+    padding: 60px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #0A689B;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: comic;
+
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.year {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0A689B;
+    padding-top: 5px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #0A689B;
+    flex-grow: 1;
+}
+
+.timeline-content h3 {
+    color: #0A689B;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.trophies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.trophy-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.trophy-card.european {
+    border-top: 4px solid #FFD700;
+}
+
+.trophy-card.national {
+    border-top: 4px solid #0A689B;
+}
+
+.trophy-card h3 {
+    color: #0A689B;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.trophy-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.trophy-name {
+    font-weight: 500;
+}
+
+.trophy-count {
+    font-weight: bold;
+    color: #0A689B;
+    font-size: 18px;
+}
+
+.trophy-years {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #0A689B 0%, #0d8bc9 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.highlight-box h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0A689B;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+}
+
+.stadium-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: #0A689B;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.stadium-specs {
+    list-style: none;
+}
+
+.stadium-specs li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stadium-specs strong {
+    color: #0A689B;
+}
+
+.history-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    border-left: 4px solid #FFD700;
+}
+
+.history-card h3 {
+    color: #0A689B;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.contact-section {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h3 {
+    color: #0A689B;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.contact-item h4 {
+    color: #0A689B;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .year {
+        width: auto;
+    }
+
+    .grid,
+    .trophies,
+    .stadium-info,
+    .stats-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
