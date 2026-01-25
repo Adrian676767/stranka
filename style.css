@@ -365,3 +365,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+body {
+  background-image: url("stadion.jpg");  /* path to your picture /
+  background-size: cover;       / fill screen /        / [web:17][web:19] /
+  background-repeat: no-repeat; / do not tile /        / [web:9][web:19] /
+  background-position: center;  / center the image /   / [web:15][web:19] */
