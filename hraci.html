@@ -1,93 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Súpiska tímu | Roster</title>
+    <title>Súpiska | ŠK Slovan Bratislava</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        
-        h1 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #222; margin-top: 0; }
-        
-        .table-wrapper { max-height: 600px; overflow-y: auto; border: 1px solid #ddd; border-radius: 8px; }
-        
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #eee; }
-        
-        th { 
-            background-color: #007bff; 
-            color: white; 
-            position: sticky; 
-            top: 0; 
-            z-index: 10;
-            text-transform: uppercase;
-            font-size: 0.85rem;
+        :root {
+            --slovan-blue: #0056a3;
+            --light-blue: #00a0e3;
+            --white: #ffffff;
+            --gray: #f4f7f9;
         }
+        body { font-family: 'Arial', sans-serif; background-color: var(--gray); margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; background: var(--white); padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         
-        tbody tr:nth-child(even) { background-color: #f9f9f9; }
-        tbody tr:hover { background-color: #f1f4f9; transition: 0.2s; }
+        .header-area { display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--slovan-blue); margin-bottom: 25px; padding-bottom: 10px; }
+        h1 { color: var(--slovan-blue); margin: 0; text-transform: uppercase; font-size: 1.8rem; }
         
-        .role-tag { 
-            background: #eef2f7; 
-            padding: 3px 10px; 
-            border-radius: 20px; 
-            font-size: 0.8rem; 
-            font-weight: 600; 
-            color: #444;
-            border: 1px solid #d1d9e6;
-        }
-
-        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #555; font-weight: bold; }
-        .back-link:hover { color: #007bff; }
+        .category-header { background: var(--slovan-blue); color: white; padding: 10px 15px; font-weight: bold; margin-top: 20px; border-radius: 5px 5px 0 0; }
+        
+        table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #eee; font-size: 0.8rem; color: #555; text-transform: uppercase; }
+        
+        .num { font-weight: bold; color: var(--light-blue); width: 40px; }
+        .name { font-weight: 600; }
+        .nat { font-size: 1.2rem; width: 60px; }
+        
+        tr:hover { background-color: #f0f8ff; }
+        .back-link { text-decoration: none; color: var(--slovan-blue); font-weight: bold; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <a href="index.html" class="back-link">← Späť na hlavnú stránku</a>
-    
-    <h1>Súpiska tímu (Full Roster)</h1>
-    
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Nickname</th>
-                    <th>Meno</th>
-                    <th>Rola v tíme</th>
-                    <th>Národnosť</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>PlayerOne</strong></td><td>Ján Kováč</td><td><span class="role-tag">IGL / Kapitán</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>SniperElite</strong></td><td>Peter Nagy</td><td><span class="role-tag">Main AWP</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>EntryFrag</strong></td><td>Michal Horváth</td><td><span class="role-tag">Entry Fragger</span></td><td>🇨🇿 CZ</td></tr>
-                <tr><td><strong>Lurker99</strong></td><td>Lukáš Malý</td><td><span class="role-tag">Lurker</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>SupportKing</strong></td><td>Martin Svoboda</td><td><span class="role-tag">Support</span></td><td>🇨🇿 CZ</td></tr>
-                
-                <tr><td><strong>YoungGun</strong></td><td>Jakub Tóth</td><td><span class="role-tag">Rifle / Academy</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>QuickScope</strong></td><td>Filip Černý</td><td><span class="role-tag">AWP / Academy</span></td><td>🇨🇿 CZ</td></tr>
-                <tr><td><strong>Shadow</strong></td><td>Andrej Varga</td><td><span class="role-tag">Substitute</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>Bullet</strong></td><td>Tomáš Novák</td><td><span class="role-tag">Entry Fragger</span></td><td>🇨🇿 CZ</td></tr>
-                <tr><td><strong>Ghost</strong></td><td>Matej Hruška</td><td><span class="role-tag">Lurker</span></td><td>🇸🇰 SK</td></tr>
-                
-                <tr><td><strong>ProStreamer</strong></td><td>Patrik Molnár</td><td><span class="role-tag">Content Creator</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>AimBot_Girl</strong></td><td>Simona Bieliková</td><td><span class="role-tag">Streamer</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>ClutchMaster</strong></td><td>Dávid Kysela</td><td><span class="role-tag">Content Creator</span></td><td>🇨🇿 CZ</td></tr>
-                
-                <tr><td><strong>Coach_Z</strong></td><td>Zdeno Mečiar</td><td><span class="role-tag">Hlavný tréner</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>DataAnalyst</strong></td><td>Igor Šťastný</td><td><span class="role-tag">Analytik</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>Manager_X</strong></td><td>Erik Urban</td><td><span class="role-tag">Team Manager</span></td><td>🇸🇰 SK</td></tr>
-                
-                <tr><td><strong>Legend</strong></td><td>Róbert Fekete</td><td><span class="role-tag">B-Team IGL</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>Silent</strong></td><td>Jozef Blaško</td><td><span class="role-tag">B-Team Rifle</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>WildCard</strong></td><td>Karel Dvořák</td><td><span class="role-tag">B-Team Support</span></td><td>🇨🇿 CZ</td></tr>
-                <tr><td><strong>Neon</strong></td><td>Samuel Kráľ</td><td><span class="role-tag">B-Team AWP</span></td><td>🇸🇰 SK</td></tr>
-                <tr><td><strong>Phoenix</strong></td><td>Viktor Szabó</td><td><span class="role-tag">B-Team Entry</span></td><td>🇸🇰 SK</td></tr>
-            </tbody>
-        </table>
+    <div class="header-area">
+        <h1>A-Tím ŠK Slovan Bratislava</h1>
+        <a href="#" class="back-link">← Návrat na správy</a>
     </div>
+
+    <div class="category-header">BRANKÁRI</div>
+    <table>
+        <thead>
+            <tr><th class="num">#</th><th>Meno</th><th>Pozícia</th><th class="nat">Štát</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="num">71</td><td class="name">Dominik Takáč</td><td>Brankár</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">31</td><td class="name">Martin Trnovský</td><td>Brankár</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">35</td><td class="name">Adam Hrdina</td><td>Brankár</td><td class="nat">🇸🇰</td></tr>
+        </tbody>
+    </table>
+
+    <div class="category-header">OBRANCOVIA</div>
+    <table>
+        <tbody>
+            <tr><td class="num">4</td><td class="name">Guram Kashia</td><td>Obranca</td><td class="nat">🇬🇪</td></tr>
+            <tr><td class="num">12</td><td class="name">Kenan Bajrić</td><td>Obranca</td><td class="nat">🇸🇮</td></tr>
+            <tr><td class="num">28</td><td class="name">César Blackman</td><td>Obranca</td><td class="nat">🇵🇦</td></tr>
+            <tr><td class="num">17</td><td class="name">Jurij Medveděv</td><td>Obranca</td><td class="nat">🇨🇿</td></tr>
+            <tr><td class="num">2</td><td class="name">Siemen Voet</td><td>Obranca</td><td class="nat">🇧🇪</td></tr>
+            <tr><td class="num">6</td><td class="name">Kevin Wimmer</td><td>Obranca</td><td class="nat">🇦🇹</td></tr>
+        </tbody>
+    </table>
+
+    <div class="category-header">STREDOPOLIARI</div>
+    <table>
+        <tbody>
+            <tr><td class="num">7</td><td class="name">Vladimír Weiss ml.</td><td>Stredopoliar (K)</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">10</td><td class="name">Tigran Barseghyan</td><td>Krídlo</td><td class="nat">🇦🇲</td></tr>
+            <tr><td class="num">33</td><td class="name">Juraj Kucka</td><td>Stredopoliar</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">20</td><td class="name">Alen Mustafić</td><td>Stredopoliar</td><td class="nat">🇧🇦</td></tr>
+            <tr><td class="num">88</td><td class="name">Kyriakos Savvidis</td><td>Def. stredopoliar</td><td class="nat">🇬🇷</td></tr>
+            <tr><td class="num">11</td><td class="name">Róbert Mak</td><td>Krídlo</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">18</td><td class="name">Nino Marcelli</td><td>Krídlo</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">24</td><td class="name">Marko Tolić</td><td>Ofenzívny stredopoliar</td><td class="nat">🇭🇷</td></tr>
+        </tbody>
+    </table>
+
+    <div class="category-header">ÚTOČNÍCI</div>
+    <table>
+        <tbody>
+            <tr><td class="num">13</td><td class="name">David Strelec</td><td>Útočník</td><td class="nat">🇸🇰</td></tr>
+            <tr><td class="num">93</td><td class="name">Idjessi Metsoko</td><td>Útočník</td><td class="nat">🇹🇬</td></tr>
+            <tr><td class="num">8</td><td class="name">Elvis Isaac</td><td>Útočník</td><td class="nat">🇳🇬</td></tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
